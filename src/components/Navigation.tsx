@@ -58,14 +58,16 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-background/80 backdrop-blur-lg shadow-card' : 'bg-transparent'
+      isScrolled ? 'bg-background/90 backdrop-blur-lg shadow-card' : 'bg-black/20 backdrop-blur-sm'
     }`}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-xl font-bold gradient-primary bg-clip-text text-transparent hover:scale-105 transition-transform"
+            className={`text-xl font-bold hover:scale-105 transition-transform ${
+              isScrolled ? 'gradient-primary bg-clip-text text-transparent' : 'text-white drop-shadow-lg'
+            }`}
           >
             SG
           </button>
@@ -76,10 +78,14 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-foreground transition-smooth relative group"
+                className={`transition-smooth relative group ${
+                  isScrolled ? 'text-muted-foreground hover:text-foreground' : 'text-white/90 hover:text-white drop-shadow-md'
+                }`}
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
+                  isScrolled ? 'bg-primary' : 'bg-white'
+                }`}></span>
               </button>
             ))}
             
