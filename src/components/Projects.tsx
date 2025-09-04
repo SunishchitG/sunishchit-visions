@@ -14,7 +14,8 @@ const projects = [
       "Optimized file upload/download throughput, reducing latency by 40%"
     ],
     technologies: ["Python", "FastAPI", "AWS S3", "PostgreSQL", "SQLAlchemy"],
-    featured: true
+    featured: true,
+    githubUrl: "https://github.com/SunishchitG/Distributed-file-storage-service"
   },
   {
     title: "AI-Powered Job Application Tracker",
@@ -27,7 +28,8 @@ const projects = [
       "Improved application success rate by 30%"
     ],
     technologies: ["React", "TypeScript", "Node.js", "Express", "Chrome Extension", "AI"],
-    featured: true
+    featured: true,
+    githubUrl: "https://github.com/SunishchitG/JobTrackr-AI"
   },
   {
     title: "Fake News Detector Using NLP",
@@ -40,7 +42,8 @@ const projects = [
       "Built classification system with team collaboration"
     ],
     technologies: ["Python", "Flask", "NLP", "Machine Learning", "Text Processing"],
-    featured: false
+    featured: false,
+    githubUrl: "https://github.com/SunishchitG/Fake-News-Detector"
   }
 ];
 
@@ -101,13 +104,14 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3 pt-2">
-                  <Button variant="outline" size="sm" className="flex-1 transition-smooth hover:bg-primary hover:text-primary-foreground">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="flex-1 transition-smooth hover:bg-primary hover:text-primary-foreground"
+                    onClick={() => window.open(project.githubUrl, '_blank')}
+                  >
                     <Github className="h-4 w-4 mr-2" />
                     Code
-                  </Button>
-                  <Button variant="outline" size="sm" className="flex-1 transition-smooth hover:bg-primary hover:text-primary-foreground">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Demo
                   </Button>
                 </div>
               </div>

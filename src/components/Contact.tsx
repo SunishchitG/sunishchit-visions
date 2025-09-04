@@ -54,7 +54,8 @@ const Contact = () => {
             <h3 className="text-2xl font-bold mb-6 group-hover:text-primary transition-smooth">Let's Connect</h3>
             
             <div className="space-y-4">
-              <Button 
+              <Button
+                onClick={() => window.open('https://github.com/SunishchitG', '_blank')}
                 variant="outline" 
                 size="lg" 
                 className="w-full justify-start text-left h-16 transition-smooth hover:bg-primary hover:text-primary-foreground"
@@ -67,7 +68,8 @@ const Contact = () => {
                 <ExternalLink className="h-4 w-4 ml-auto" />
               </Button>
               
-              <Button 
+              <Button
+                onClick={() => window.open('https://www.linkedin.com/in/sunishchit03087256/', '_blank')}
                 variant="outline" 
                 size="lg" 
                 className="w-full justify-start text-left h-16 transition-smooth hover:bg-primary hover:text-primary-foreground"

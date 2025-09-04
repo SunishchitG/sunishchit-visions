@@ -33,15 +33,30 @@ const Hero = () => {
           </div>
           
           <div className="flex items-center justify-center gap-4 pt-4">
-            <Button variant="outline" size="lg" className="bg-white/20 border-white/40 text-white hover:bg-white hover:text-primary transition-smooth backdrop-blur-sm">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="bg-white/20 border-white/40 text-white hover:bg-white hover:text-primary transition-smooth backdrop-blur-sm"
+              onClick={() => window.open('https://github.com/SunishchitG', '_blank')}
+            >
               <Github className="h-5 w-5 mr-2" />
               GitHub
             </Button>
-            <Button variant="outline" size="lg" className="bg-white/20 border-white/40 text-white hover:bg-white hover:text-primary transition-smooth backdrop-blur-sm">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="bg-white/20 border-white/40 text-white hover:bg-white hover:text-primary transition-smooth backdrop-blur-sm"
+              onClick={() => window.open('https://www.linkedin.com/in/sunishchit03087256/', '_blank')}
+            >
               <Linkedin className="h-5 w-5 mr-2" />
               LinkedIn
             </Button>
-            <Button variant="outline" size="lg" className="bg-white/20 border-white/40 text-white hover:bg-white hover:text-primary transition-smooth backdrop-blur-sm">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="bg-white/20 border-white/40 text-white hover:bg-white hover:text-primary transition-smooth backdrop-blur-sm"
+              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Mail className="h-5 w-5 mr-2" />
               Contact
             </Button>
