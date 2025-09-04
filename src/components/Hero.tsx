@@ -18,6 +18,18 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center animate-fade-in">
         <div className="space-y-6">
+          {/* Profile Photo */}
+          <div className="flex justify-center mb-8">
+            <div className="relative">
+              <img 
+                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+                alt="Sunishchit Ghimire"
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white/20 shadow-elegant backdrop-blur-sm"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 to-transparent"></div>
+            </div>
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             <span className="block text-white drop-shadow-lg">Sunishchit</span>
             <span className="block text-white drop-shadow-lg">Ghimire</span>

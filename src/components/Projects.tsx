@@ -58,13 +58,11 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className={`p-6 gradient-card shadow-card hover:shadow-elegant transition-smooth group animate-slide-up ${
-                project.featured ? 'md:col-span-2 lg:col-span-2' : ''
-              }`}
+              className="p-6 gradient-card shadow-card hover:shadow-elegant transition-smooth group animate-slide-up"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="space-y-4">
