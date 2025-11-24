@@ -1,73 +1,42 @@
-# Welcome to your Lovable project
+# Personal Portfolio
 
-## Project info
+This repository hosts a Vite + React + TypeScript portfolio for showcasing experience, projects, and contact details. The UI is powered by Tailwind CSS and shadcn/ui components for a consistent, accessible design.
 
-**URL**: https://lovable.dev/projects/b4f12466-5c02-491e-a505-ab55d4fe42ab
+## Tech Stack
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/b4f12466-5c02-491e-a505-ab55d4fe42ab) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
+- React 18 with SWC tooling
 - TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Vite
+- Tailwind CSS & tailwind-merge
+- shadcn/ui + Radix primitives
 
-## How can I deploy this project?
+## Getting Started
 
-Simply open [Lovable](https://lovable.dev/projects/b4f12466-5c02-491e-a505-ab55d4fe42ab) and click on Share -> Publish.
+1. Install dependencies:
+   ```sh
+   npm install
+   ```
+2. Start the development server:
+   ```sh
+   npm run dev
+   ```
+3. Open the printed local URL (default http://localhost:5173/) to view the site.
 
-## Can I connect a custom domain to my Lovable project?
+## Available Scripts
 
-Yes, you can!
+- `npm run dev` – start a hot-reloading development server.
+- `npm run build` – create an optimized production build in `dist/`.
+- `npm run preview` – serve the build locally to verify before deploying.
+- `npm run lint` – run ESLint with the shared config.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Building & Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Run `npm run build` and deploy the generated `dist/` folder to your hosting provider (e.g., Netlify, Vercel, GitHub Pages, or any static hosting). For container-based or custom setups, serve the `dist/` directory with your preferred web server.
+
+## Customization Tips
+
+- Update the content inside `src/components` and `src/pages` to reflect new projects or experience.
+- Global styles and theme tweaks live in `src/index.css` and `src/App.css`.
+- Shared utilities can be added to `src/lib/`.
+
+Feel free to adapt the structure to your workflow—this project is now decoupled from any external tooling overlays.
