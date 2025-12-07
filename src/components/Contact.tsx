@@ -28,26 +28,9 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-tech-blue rounded-lg flex items-center justify-center group-hover:shadow-glow transition-smooth">
-                  <Phone className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <p className="font-semibold">Phone</p>
-                  <p className="text-muted-foreground">202-255-3306</p>
-                </div>
-              </div>
+        
               
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-tech-purple rounded-lg flex items-center justify-center group-hover:shadow-glow transition-smooth">
-                  <MapPin className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <p className="font-semibold">Location</p>
-                  <p className="text-muted-foreground">1457 Park RD NW, Washington, DC 20010</p>
-                </div>
-              </div>
-            </div>
+            
           </Card>
           
           <Card className="p-8 gradient-card shadow-card hover:shadow-elegant transition-smooth group">
