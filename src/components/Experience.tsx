@@ -3,28 +3,17 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Calendar } from "lucide-react";
 
 const experiences = [
-  {
-    company: "Splunk",
-    role: "Software Development Engineer Intern",
-    location: "Boulder, Colorado",
-    period: "May 2025 - Aug 2025",
-    description: [
-      "Developed a chatbot agent that integrates with Splunk's Search Processing Language (SPL) to query and retrieve log data, enabling natural language interaction with Splunk dashboards.",
-      "Implemented Python backend services with Splunk REST API to process user queries, parse responses, and return insights in real time",
-      "Enhanced usability by supporting alert notifications and automated troubleshooting workflows, reducing manual dashboard searches",
-      "Deployed on Splunk Enterprise/Cloud environment, showcasing expertise in data ingestion, query optimization, and log analytics"
-    ],
-    skills: ["Python", "Splunk", "REST API", "SPL", "Cloud Computing"]
-  },
+  
   {
     company: "Howard University",
     role: "Research Assistant",
     location: "Washington DC",
     period: "Feb 2024 - Apr 2025",
     description: [
-      "Developed Python-based simulations to model quasiperiodic functions, quasicrystals, and tilings, applying computational methods to explore complex structural patterns",
-      "Designed and implemented algorithms and data-driven models to analyze system behaviors, leveraging Python libraries for visualization and performance optimization",
-      "Applied principles of computational modeling and algorithm design to support research on large-scale pattern recognition and structural analysis"
+      "Research Assistant at Howard University contributing to projects in conversational AI, speech recognition, and healthcare technology with a focus on improving accessibility and patient communication",
+      "Designed and developed a hospital chatbot using natural language processing and machine learning to streamline patient interaction, automate responses, and support clinical workflows",
+      "Built and optimized a voice assistant system tailored for Black voices by incorporating dialect-aware acoustic modeling and linguistic features to reduce speech recognition errors"
+      "Performed model training, data preprocessing, and performance evaluation, resulting in improved accuracy, user experience, and bias mitigation in healthcare-focused speech systems"
     ],
     skills: ["Python", "Algorithm Design", "Data Analysis", "Computational Modeling", "Research"]
   },
