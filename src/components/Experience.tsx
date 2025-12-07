@@ -12,7 +12,7 @@ const experiences = [
     description: [
       "Research Assistant at Howard University contributing to projects in conversational AI, speech recognition, and healthcare technology with a focus on improving accessibility and patient communication",
       "Designed and developed a hospital chatbot using natural language processing and machine learning to streamline patient interaction, automate responses, and support clinical workflows",
-      "Built and optimized a voice assistant system tailored for Black voices by incorporating dialect-aware acoustic modeling and linguistic features to reduce speech recognition errors"
+      "Built and optimized a voice assistant system tailored for Black voices by incorporating dialect-aware acoustic modeling and linguistic features to reduce speech recognition errors",
       "Performed model training, data preprocessing, and performance evaluation, resulting in improved accuracy, user experience, and bias mitigation in healthcare-focused speech systems"
     ],
     skills: ["Python", "Algorithm Design", "Data Analysis", "Computational Modeling", "Research"]
